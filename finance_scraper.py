@@ -1,7 +1,8 @@
-# Other potential data sources
-# https://www.alphavantage.co/
-# https://www.alphavantage.co/documentation/
-# https://iextrading.com/
+''' Other potential data sources:
+https://www.alphavantage.co/
+https://www.alphavantage.co/documentation/
+https://iextrading.com/
+'''
 
 import pandas as pd
 import datetime as dt
@@ -22,7 +23,7 @@ while (not(ticker_str.isnumeric() and int(ticker_str) is 0)):
     ticker = requests.get('https://finance.yahoo.com/quote/{}?p={}'.format(ticker_str, ticker_str))
 
     # If it isn't, print an error message. Else, add it to `keys`
-    if (ticker.status_code is not 200):
+    if (ticker.find('No results for') is not -1):
         print('{} is not a valid ticker. Please try again.'.format(ticker_str))
     else:
         keys.append(ticker_str)
