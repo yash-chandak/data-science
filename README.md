@@ -10,7 +10,7 @@ To-do
 
 ### Opioid Project
 
-The opioid project is mainly a demonstration of preprocessing techniques. It also contains basic models of the data to try to predict Adverse Opioid Events given a variety of other data.
+The opioid project is mainly a demonstration of preprocessing techniques. It also contains basic models of the data to try to predict Adverse Opioid Events given a variety of other data. I also used the code from the project to create an "Introduction to Data Science" tutorial, of which I have added the PDF version.
 
 ### Finance Scraper
 
